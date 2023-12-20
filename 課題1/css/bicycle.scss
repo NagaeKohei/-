@@ -1,0 +1,168 @@
+/*命名規則：BEM*/
+
+/* リセットCSS */
+
+/* ブロック要素のマージン、パディングをリセット */
+body,
+h1, h2,
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* リストスタイルをリセット */
+ul {
+  list-style: none;
+}
+
+/* インライン要素のマージン、パディングをリセット */
+a {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+/* ボックスサイズをborder-boxに設定 */
+* {
+  box-sizing: border-box;
+}
+
+/* その他のリセットやノーマライズのスタイルをここに追加 */
+
+header {
+  background-color: #fff;
+  .section {
+    .section__nav {
+      width: 850px;
+      margin: 0 auto;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .section__nav-logo {
+        width: 120px;
+        height: 40px;
+        img {
+          width: 100%;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .section__nav-ul{
+        display: flex;
+        .section__nav-ul-list {
+          margin-left: 30px;
+          .section__nav-ul-list-link {
+            font-size: 0.9rem;
+            color: #111;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .h2__title {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -2px; 
+      width: 105px;
+      height: 1px; 
+      background-color: black;
+    }
+  }
+
+
+  .main-visual {
+    .main-visual__container {
+      width: 100%;
+      height: 600px;
+      img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 86px;
+    .about__container {
+      .about__content {
+        width: 550px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about__profile-image {
+          width: 100px;
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .about__text {
+          width:420px;
+          .about__name {
+            font-weight: 600;
+          }
+          .about__description {
+            margin-top: 10px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bicycle {
+    .bicycle__container {
+      padding-top: 86px;
+      .bicycle__list {
+        width: 900px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 60px;
+        justify-content: space-around;
+        .bicycle__item {
+          width: 33.3%;
+          text-align: center;
+          img {
+            width: 95%;
+          }
+          .bicycle__item-title {
+            font-weight: 600;
+            margin: 10px 0;
+          }
+          .bicycle__item-text {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  .copyright {
+    font-size: 0.5rem;
+  }
+}

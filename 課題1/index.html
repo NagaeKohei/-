@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>タイトルタイトル</title>
+  <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/bicycle.css">
 </head>
 <body>
   
+<header>
+  <section class="section">
+    <nav class="section__nav">
+      <div class="section__nav-logo">
+        <a href="#"><img src="./img/240x80.png" alt="ロゴマーク"></a>
+      </div>
+      <ul class="section__nav-ul">
+        <li class="section__nav-ul-list">
+          <a class="section__nav-ul-list-link" href="#about-content">About</a>
+        </li>
+        <li class="section__nav-ul-list">
+          <a class="section__nav-ul-list-link" href="#bicycle-content">Bicylce</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+<main>
+  <section class="main-visual">
+    <div class="main-visual__container">
+      <img src="./img/1920x1280.png" alt="メインビジュアル">
+    </div>
+  </section>
+  
+  <section class="about" id="about-content">
+    <div class="about__container">
+      <h2 class="about__title h2__title">About</h2>
+      <div class="about__content">
+        <div class="about__profile-image">
+          <img src="./img/640x640.png" alt="プロフィール写真">
+        </div>
+        <div class="about__text">
+          <p class="about__name">KAKERU MIYAICHI</p>
+          <p class="about__description">テキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bicycle" id="bicycle-content">
+    <div class="bicycle__container">
+      <h2 class="bicycle__title h2__title">Bicycle</h2>
+      <ul class="bicycle__list">
+        <li class="bicycle__item">
+          <div class="bicycle__image">
+            <img src="./img/640x424.png" alt="バイク画像1">
+          </div>
+          <p class="bicycle__item-title">タイトルタイトル</p>
+          <p class="bicycle__item-text">テキストテキストテキスト</p>
+        </li>
+        <li class="bicycle__item">
+          <div class="bicycle__image">
+            <img src="./img/640x424 - コピー.png" alt="バイク画像2">
+          </div>
+          <p class="bicycle__item-title">タイトルタイトル</p>
+          <p class="bicycle__item-text">テキストテキストテキスト</p>
+        </li>
+        <li class="bicycle__item">
+          <div class="bicycle__image">
+            <img src="./img/640x424 - コピー (2).png" alt="バイク画像3">
+          </div>
+          <p class="bicycle__item-title">タイトルタイトル</p>
+          <p class="bicycle__item-text">テキストテキストテキスト</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="copyright">© 2020 Profile</p>
+</footer>
+
 </body>
 </html>
