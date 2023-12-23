@@ -4,8 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/jewelry.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
-  
+
+<body class="site">
+  <header class="site__header">
+    <section class="site__section site__section--visual">
+      <div class="site__image-container">
+        <img src="./img/1920x900.jpg" alt="メインビジュアル" class="site__image">
+      </div>
+    </section>
+    <section class="site__section site__section--nav">
+      <nav class="site__nav">
+        <li class="site__logo-container site__nav-item">
+          <img src="./img/220x30.png" alt="ヘッダーロゴ" class="site__logo">
+        </li>
+        <li class="site__nav-item">
+          <a href="#concept" class="site__nav-link">Concept</a>
+        </li>
+        <li class="site__nav-item">
+          <a href="#work" class="site__nav-link">Work</a>
+        </li>
+        <li class="site__nav-item">
+          <a href="mailto:xxxxx@xxxxxxx.xxx" class="site__nav-link">Contact</a>
+        </li>
+      </nav>
+    </section>
+  </header>
+
+  <main class="site__main">
+    <section id="concept" class="site__section site__section--concept">
+      <div class="site__image-container">
+        <img src="./img/1000x1000.jpg" alt="アクセサリー写真1" class="site__image">
+      </div>
+      <div class="site__content">
+        <h2 class="site__title">私たちが考えるジュエリーとは</h2>
+        <h3 class="site__subtitle">Concept</h3>
+        <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+    </section>
+    <section id="work" class="site__section site__section--work">
+      <div class="site__image-container">
+        <img src="./img/1000x1000-2.jpg" alt="アクセサリー写真2" class="site__image">
+      </div>
+      <div class="site__content">
+        <h2 class="site__title">ハンドメイドにこだわる理由</h2>
+        <h3 class="site__subtitle">Work</h3>
+        <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site__footer">
+    <section class="site__section site__section--footer">
+      <div class="site__logo-container">
+        <img src="./img/220x30.png" alt="フッターロゴ" class="site__logo">
+      </div>
+      <p class="site__copyright">© 2021 Wooden Jewelry</p>
+    </section>
+  </footer>
 </body>
 </html>
