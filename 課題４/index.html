@@ -4,8 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/magazine.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
-  
+
+<body class="site">
+  <header class="site__header">
+    <section class="site__section site__section--logo">
+      <div class="site__image-container">
+        <img src="./img/240x80.png" alt="ヘッダーロゴ" class="site__image">
+      </div>
+    </section>
+  </header>
+
+  <main class="site__main">
+    <section class="site__section site__section--special">
+      <div class="site__content">
+        <h2 class="site__title">A special, long article in a newspaper or magazine</h2>
+        <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <article class="site__article">
+        <section class="site__section site__section--archive">
+          <a href="#" class="site__link">
+            <div class="site__image-container">
+              <img src="./img/1000x1000.jpg" alt="archive" class="site__image">
+            </div>
+            <div class="site__content">
+              <h3 class="site__subtitle">Archive</h3>
+              <p class="site__text">テキストテキストテキストテキスト<br>テキストテキストテキスト</p>
+            </div>
+          </a>
+        </section>
+        <section class="site__section site__section--new">
+          <a href="#" class="site__link">
+            <div class="site__image-container">
+              <img src="./img/1000x1000-2.jpg" alt="new" class="site__image">
+            </div>
+            <div class="site__content">
+              <h3 class="site__subtitle">New</h3>
+              <p class="site__text">テキストテキストテキストテキスト<br>テキストテキストテキスト</p>
+            </div>
+          </a>
+        </section>
+      </article>
+    </section>
+
+    <section class="site__section site__section--fashion">
+      <div class="site__content">
+        <h2 class="site__title">Fashion & Style</h2>
+        <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="site__link-container">
+        <a href="#" class="site__link">Read More</a>
+      </div>
+    </section>
+
+    <section class="site__section site__section--catalog-antique">
+      <article class="site__article site__article--catalog">
+        <div class="site__image-container">
+          <img src="./img/1000x1000-3.jpg" alt="catalog" class="site__image">
+        </div>
+        <div class="site__content">
+          <h3 class="site__subtitle">Catalog</h3>
+          <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </article>
+      <article class="site__article site__article--antique">
+        <div class="site__image-container">
+          <img src="./img/1000x1000-3.jpg" alt="catalog" class="site__image">
+        </div>
+        <div class="site__content">
+          <h3 class="site__subtitle">Antique</h3>
+          <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="site__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <div class="site__link-container">
+            <a href="#" class="site__link">Read More</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site__footer">
+    <section class="site__section site__section--nav">
+      <nav class="site__nav">
+        <li class="site__nav-item site__nav-item-logo">
+          <div class="site__logo-container">
+            <a href="#"><img src="./img/240x80.png" alt="フッターロゴ" class="site__logo"></a>
+          </div>
+        </li>
+        <li class="site__nav-item">
+          <h4 class="site__nav-title">タイトル</h4>
+          <ul class="site__nav-list">
+            <li class="site__nav-list-item">テキストテキストテキスト</li>
+            <li class="site__nav-list-item">テキストテキストテキスト</li>
+            <li class="site__nav-list-item">テキストテキストテキスト</li>
+            <li class="site__nav-list-item">テキストテキストテキスト</li>
+            <li class="site__nav-list-item">テキストテキストテキスト</li>
+          </ul>
+        </li>
+        <li class="site__nav-item">
+          <h4 class="site__nav-title">タイトルタイトルタイトル</h4>
+          <p class="site__nav-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+      </nav>
+    </section>
+    <div class="site__copyright-container">
+      <p class="site__copyright">© Mag88</p>
+    </div>
+  </footer>
 </body>
+
 </html>
