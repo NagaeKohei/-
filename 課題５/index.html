@@ -4,8 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/corprate.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-  
+
+<body class="site">
+  <header class="site__header">
+    <section class="site__section--back">
+      <section class="site__section site__section--logo">
+        <article class="site__article">
+          <div class="site__image-container">
+            <a href="#" class="site__link">
+              <img src="./img/540X140.png" alt="ヘッダーロゴ" class="site__image">
+            </a>
+          </div>
+          <nav class="site__nav">
+            <li class="site__nav-item"><a href="#news">NEWS</a></li>
+            <li class="site__nav-item"><a href="#about">ABOUT</a></li>
+            <li class="site__nav-item"><a href="#business">BUSINESS</a></li>
+            <li class="site__nav-item"><a href="#company">COMPANY</a></li>
+          </nav>
+        </article>
+        <div class="site__link-container">
+          <a href="#" class="site__link">お問い合わせ</a>
+        </div>
+      </section>
+    </section>
+    <section class="site__section site__section--visual">
+      <div class="site__image-container">
+        <img src="./img/mainvisual.jpg" alt="メインビジュアル" class="site__image">
+      </div>
+    </section>
+  </header>
+
+  <main class="site__main">
+    <section class="site__section site__section--news" id="news">
+      <div class="site__content site__content--title">
+        <h2 class="site__title">NEWS</h2>
+        <p class="site__subtitle">ニュース</p>
+      </div>
+      <ul class="site__list">
+        <li class="site__list-item">
+          <p class="site__date">2021.01.01 <span class="site__category">NEWS</span></p>
+          <p class="site__text">タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li class="site__list-item">
+          <p class="site__date">2021.01.01 <span class="site__category">PRESS</span></p>
+          <p class="site__text">タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li class="site__list-item">
+          <p class="site__date">2021.01.01 <span class="site__category">NEWS</span></p>
+          <p class="site__text">タイトルタイトルタイトルタイトル</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="site__section site__section--about" id="about">
+      <div class="site__image-container">
+        <img src="./img/about.jpg" alt="私たちについての" class="site__image">
+      </div>
+      <div class="site__content">
+        <div class="site__header site__content--title">
+          <h2 class="site__title">ABOUT</h2>
+          <p class="site__subtitle">私たちについて</p>
+        </div>
+        <p class="site__text">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+        <p class="site__text">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+        <p class="site__text">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+      </div>
+    </section>
+
+    <section class="site__section site__section--business" id="business">
+      <div class="site__content site__content--title">
+        <h2 class="site__title">BUSINESS</h2>
+        <p class="site__subtitle">事業内容</p>
+      </div>
+      <article class="site__article">
+        <ol class="site__list">
+          <ul>
+            <li class="site__list-item">
+              <p class="site__text">- WEB制作マーケティング</p>
+              <div class="site__image-container">
+                <img src="./img/business1.jpg" alt="" class="site__image">
+              </div>
+            </li>
+            <li class="site__list-item">
+              <p class="site__text">- インターネットメディア事業</p>
+              <div class="site__image-container">
+                <img src="./img/business2.jpg" alt="" class="site__image">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li class="site__list-item">
+              <p class="site__text">- プロモーション企画・製作</p>
+              <div class="site__image-container">
+                <img src="./img/business3.jpg" alt="" class="site__image">
+              </div>
+            </li>
+            <li class="site__list-item">
+              <p class="site__text">- ソーシャル企画・運営</p>
+              <div class="site__image-container">
+                <img src="./img/business4.jpg" alt="" class="site__image">
+              </div>
+            </li>
+          </ul>
+        </ol>
+      </article>
+    </section>
+
+    <section class="site__section site__section--company" id="company">
+      <article class="site__article">
+        <div class="site__content site__content--title">
+          <h2 class="site__title">COMPANY</h2>
+          <p class="site__subtitle">会社情報</p>
+        </div>
+        <dl class="company">
+          <dt class="company__term">会社名</dt>
+          <dd class="company__description">ウェブエンターテイメントデザイン株式会社</dd>
+          <dt class="company__term">所在地</dt>
+          <dd class="company__description">東京都渋谷区桜丘町99-9 West Building 3F</dd>
+          <dt class="company__term">代表</dt>
+          <dd class="company__description">ＸＸＸＸＸＸ</dd>
+          <dt class="company__term">設立</dt>
+          <dd class="company__description">2021年1月1日</dd>
+          <dt class="company__term">資本金</dt>
+          <dd class="company__description">3,000,000円</dd>
+          <dt class="company__term">事業内容</dt>
+          <dd class="company__description">Web制作・マーケティング</dd>
+          <dd class="company__description company__description--plus">インターネットメディア事業</dd>
+          <dd class="company__description company__description--plus">プロモーション企画・制作</dd>
+          <dd class="company__description company__description--plus">ソーシャル企画・運営</dd>
+        </dl>        
+      </article>
+      <div class="site__image-container">
+        <img src="./img/company.jpg" alt="" class="site__image">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site__footer">
+    <div class="site__content">
+      <div class="site__logo-container">
+        <img src="./img/540X140.png" alt="フッターロゴ" class="site__logo">
+      </div>
+      <p class="site__text">Web Entertainment Design Inc.<br>
+        West Building 3F<br>
+        9-99 Sakuragaokacho Shibuya-ku<br>
+        Tokyo, Japan 150-0031<br>
+        T/99-9999-9999</p>
+    </div>
+    <div class="site__copyright-container">
+      <p class="site__copyright">© Web Entertainment Design Inc.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
