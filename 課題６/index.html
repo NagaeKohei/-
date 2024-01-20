@@ -4,8 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/sousaku.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="header">
+    <section class="header__section">
+      <article class="header__article">
+        <div class="header__logo-container">
+          <img src="./img/114X262.png" alt="ヘッダーロゴ" class="header__logo">
+        </div>
+        <nav class="header__nav">
+          <li class="header__nav-item">
+            <a href="#notice" class="header__nav-link">お知らせ</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#intro" class="header__nav-link">商品のご紹介</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#guide" class="header__nav-link">店舗のご案内</a>
+          </li>
+        </nav>
+      </article>
+      <article class="header__article--store">
+        <a href="#" target="_blank" class="header__store-link">オンラインストアを見る</a>
+      </article>
+    </section>
+  </header>
+
+  <main class="main">
+    <section id="notice" class="main__section main__section--notice">
+      <div class="main__content">
+        <p class="main__content-label">News</p>
+        <h2 class="main__content-title">
+          お知らせ
+        </h2>
+      </div>
+      <ul class="main__list">
+        <li class="main__list-item">
+          <p class="main__list-date">2021.01.01</p>
+          <p class="main__list-text">タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li class="main__list-item">
+          <p class="main__list-date">2021.01.01</p>
+          <p class="main__list-text">タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li class="main__list-item">
+          <p class="main__list-date">2021.01.01</p>
+          <p class="main__list-text">タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li class="main__list-item">
+          <p class="main__list-date">2021.01.01</p>
+          <p class="main__list-text">タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li class="main__list-item">
+          <p class="main__list-date">2021.01.01</p>
+          <p class="main__list-text">タイトルタイトルタイトルタイトル</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main__section main__section--values">
+      <div class="main__content">
+        <h2 class="main__content-title">新しい価値の創造</h2>
+        <p class="main__content-subtitle">Create New Values</p>
+      </div>
+      <article class="main__article">
+        <img src="./img/products1.jpg" alt="" class="main__image">
+        <p class="main__content-text">テキストテキスト<br>テキストテキスト</p>
+      </article>
+    </section>
+
+    <section class="main__section main__section--science">
+      <div class="main__content">
+        <h2 class="main__content-title">科学と技術の調和</h2>
+        <p class="main__content-subtitle">Science &amp; Technology</p>
+      </div>
+      <article class="main__article">
+        <img src="./img/products1.jpg" alt="" class="main__image">
+        <p class="main__content-text">テキストテキスト<br>テキストテキスト</p>
+      </article>
+    </section>
+
+    <section id="guide" class="main__section main__section--guide">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6483.366329297049!2d139.735061!3d35.660177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1705018780205!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="main__map"></iframe>
+    </section>
+  </main>
   
+  <footer class="footer">
+    <section class="footer__section">
+      <article class="footer__article">
+        <div class="footer__logo-container">
+          <img src="./img/114X262.png" alt="ヘッダーロゴ" class="footer__logo">
+        </div>
+        <div class="footer__content--text">
+          <p class="footer__text">〒１０６-００３２　東京都港区六本木５丁目×××××</p>
+          <p class="footer__text">電話：０３-ＸＸＸＸ-ＸＸＸＸ</p>
+        </div>
+        <nav class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#notice" class="footer__nav-link">お知らせ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#intro" class="footer__nav-link">商品のご紹介</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#guide" class="footer__nav-link">店舗のご案内</a>
+          </li>
+        </nav>
+      </article>
+      <article class="footer__article footer__article--store">
+        <a href="#" target="_blank" class="footer__store-link">オンラインストアを見る | お問い合わせ</a>
+      </article>
+    </section>
+    <section class="footer__section--copyright">
+      <p class="footer__copyright">© SOUSAKU</p>
+    </section>
+  </footer>
+
 </body>
 </html>
