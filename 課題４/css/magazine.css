@@ -31,7 +31,9 @@ a, button {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.875rem;
+  color: #2a2a2a;
 }
 
 .site__header .site__section--logo {
@@ -47,7 +49,7 @@ body {
   height: 40px;
   position: absolute;
   top: 30px;
-  right: 3%;
+  right: 30px;
 }
 .site__header .site__section--logo .site__image-container img {
   width: 100%;
@@ -57,42 +59,42 @@ body {
   text-align: center;
 }
 .site__content .site__title {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .site__content .site__text {
-  margin-top: 15px;
-  font-size: 0.9rem;
+  margin-top: 20px;
 }
 
 .site__section--special {
-  margin-top: 70px;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
 }
 .site__section--special .site__article {
   margin-top: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--special .site__article {
     flex-direction: column;
   }
 }
 .site__section--special .site__article .site__section {
-  width: 41%;
-  margin-left: 23px;
+  width: 49%;
 }
-.site__section--special .site__article .site__section:first-child {
-  margin-left: 0;
-}
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--special .site__article .site__section:first-child {
     margin-left: auto;
     margin-bottom: 30px;
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--special .site__article .site__section {
-    width: 90%;
+    width: 100%;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
@@ -105,45 +107,53 @@ body {
   width: 100%;
 }
 .site__section--special .site__article .site__section .site__link .site__content {
-  width: 290px;
+  max-width: 290px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  margin: 0 auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  background-color: rgba(17, 17, 17, 0.6509803922);
+  top: 40%;
+  left: 0;
+  right: 0;
 }
 .site__section--special .site__article .site__section .site__link .site__content .site__subtitle, .site__section--special .site__article .site__section .site__link .site__content .site__text {
   color: #fff;
 }
 .site__section--special .site__article .site__section .site__link .site__content .site__subtitle {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 .site__section--special .site__article .site__section .site__link .site__content .site__text {
-  margin-top: 3px;
+  margin-top: 2px;
 }
 .site__section--special .site__article .site__section .site__link:hover {
   opacity: 0.7;
 }
 
 .site__section--fashion {
-  margin-top: 50px;
+  margin-top: 80px;
   background-image: url(../img/1920x480.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  height: 480px;
+  background-position: center top;
+  background-size: cover;
+  height: 520px;
 }
 .site__section--fashion .site__content {
-  padding-top: 50px;
+  padding-top: 60px;
+}
+@media (max-width: 896px) {
+  .site__section--fashion .site__content {
+    padding-top: 35px;
+  }
 }
 .site__section--fashion .site__link-container {
-  margin-top: 40px;
+  margin-top: 43px;
   text-align: center;
 }
 .site__section--fashion .site__link-container .site__link {
-  padding: 13px 32px;
-  border: 1px solid #3c3c3c;
-  font-size: 0.7rem;
+  padding: 14px 36px;
+  border: solid 1px #2a2a2a;
+  font-size: 0.75rem;
 }
 .site__section--fashion .site__link-container .site__link:hover {
   opacity: 0.7;
@@ -153,59 +163,73 @@ body {
   margin-top: 80px;
   background-color: #e9e9e9;
 }
+@media (max-width: 896px) {
+  .site__section--catalog-antique {
+    margin-top: 50px;
+  }
+}
 .site__section--catalog-antique .site__article {
-  width: 1000px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 5%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .site__section--catalog-antique .site__article .site__image-container {
-  width: 47%;
+  width: 48%;
 }
 .site__section--catalog-antique .site__article .site__image-container img {
   width: 100%;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--catalog-antique .site__article .site__image-container {
-    width: 90%;
+    width: 100%;
   }
 }
 .site__section--catalog-antique .site__article .site__content {
   width: 48%;
-  text-align: start;
+  text-align: center;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--catalog-antique .site__article .site__content {
-    width: 90%;
+    width: 100%;
   }
 }
 .site__section--catalog-antique .site__article .site__content h3 {
-  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
 }
 .site__section--catalog-antique .site__article .site__content p {
-  margin-top: 35px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.site__section--catalog-antique .site__article .site__content p:last-child {
+  margin-bottom: 0;
 }
 .site__section--catalog-antique .site__article--catalog {
   padding-top: 60px;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--catalog-antique .site__article--catalog {
     flex-direction: column;
+    padding-top: 30px;
   }
   .site__section--catalog-antique .site__article--catalog .site__subtitle {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 .site__section--catalog-antique .site__article--antique {
-  margin-top: 100px;
+  margin-top: 120px;
   padding-bottom: 60px;
   flex-direction: row-reverse;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__section--catalog-antique .site__article--antique {
     flex-direction: column-reverse;
+    margin-top: 60px;
+    padding-bottom: 30px;
   }
   .site__section--catalog-antique .site__article--antique .site__image-container {
     margin-top: 70px;
@@ -216,38 +240,46 @@ body {
   text-align: center;
 }
 .site__section--catalog-antique .site__article--antique .site__content .site__link-container .site__link {
-  padding: 13px 32px;
-  border: 1px solid #3c3c3c;
-  font-size: 0.7rem;
+  padding: 14px 36px;
+  border: solid 1px #2a2a2a;
+  font-size: 0.75rem;
 }
 .site__section--catalog-antique .site__article--antique .site__content .site__link-container .site__link:hover {
   opacity: 0.7;
 }
 
 .site__footer .site__section--nav {
-  background-color: #3c3c3c;
+  background-color: #333;
 }
 .site__footer .site__section--nav .site__nav {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 60px;
+  padding: 103px 5%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__footer .site__section--nav .site__nav {
     flex-direction: column;
     align-items: start;
-    padding: 40px 35px 60px 35px;
+    padding: 35px 5%;
     margin: 0;
   }
 }
-.site__footer .site__section--nav .site__nav .site__nav-item {
-  width: 30%;
+.site__footer .site__section--nav .site__nav .site__nav-item-logo {
+  padding: 60px 0;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
+  .site__footer .site__section--nav .site__nav .site__nav-item-logo {
+    padding: 0;
+  }
+}
+.site__footer .site__section--nav .site__nav .site__nav-item {
+  width: 33%;
+  line-height: 2;
+}
+@media (max-width: 896px) {
   .site__footer .site__section--nav .site__nav .site__nav-item {
     width: 100%;
   }
@@ -271,19 +303,19 @@ body {
   font-size: 1rem;
   color: #fff;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__footer .site__section--nav .site__nav .site__nav-item .site__nav-title {
     margin-bottom: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 .site__footer .site__section--nav .site__nav .site__nav-item .site__nav-list-item {
   font-size: 0.75rem;
   color: #fff;
-  line-height: 22px;
+  margin-left: 10px;
   position: relative;
 }
-@media (max-width: 840px) {
+@media (max-width: 896px) {
   .site__footer .site__section--nav .site__nav .site__nav-item .site__nav-list-item {
     line-height: 25px;
   }
@@ -301,12 +333,12 @@ body {
 .site__footer .site__section--nav .site__nav .site__nav-item .site__nav-text {
   font-size: 0.75rem;
   color: #fff;
-  line-height: 22px;
+  margin-bottom: 30px;
 }
 .site__footer .site__copyright-container {
   text-align: center;
 }
 .site__footer .site__copyright-container .site__copyright {
   padding: 30px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=magazine.css.map */
